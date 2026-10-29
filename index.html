@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Professional Power Wash | Kitchen Exhaust Cleaning in Alberta Since 1979</title>
+<meta name="description" content="A trusted name in kitchen exhaust cleaning services and kitchen fire prevention, throughout Alberta, since 1979. PAC certified technicians.">
+<link rel="icon" type="image/png" href="images/pgs-logo.png">
+<style>
+@font-face{font-family:"Big Shoulders Display";font-weight:700;font-display:swap;src:url(fonts/big-shoulders-display-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Big Shoulders Display";font-weight:900;font-display:swap;src:url(fonts/big-shoulders-display-latin-900-normal.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-weight:400;font-display:swap;src:url(fonts/ibm-plex-sans-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-weight:500;font-display:swap;src:url(fonts/ibm-plex-sans-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-weight:600;font-display:swap;src:url(fonts/ibm-plex-sans-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-weight:500;font-display:swap;src:url(fonts/ibm-plex-mono-latin-500-normal.woff2) format("woff2")}
+
+:root{
+  --ink:#07111f; --navy:#0b1f3a; --blue:#0068b0; --blue-deep:#064a80; --blueprint:#0a4a86;
+  --red:#e2303a; --red-hot:#f03840; --steel:#8ea3ba; --mist:#dbe5ef; --paper:#eef2f6; --white:#fff;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"IBM Plex Sans",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --pad:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{font:400 17px/1.6 var(--body);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+ul{list-style:none}
+.wrap{max-width:1360px;margin:0 auto;padding:0 var(--pad)}
+.label{font:500 12px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase}
+.h2{font:900 clamp(40px,6vw,92px)/.9 var(--display);text-transform:uppercase;letter-spacing:.005em}
+.btn{display:inline-flex;align-items:center;gap:.7em;font:600 15px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:18px 26px;border:2px solid transparent;border-radius:2px;transition:background .2s,color .2s,transform .2s,border-color .2s}
+.btn svg{width:18px;height:18px;transition:transform .2s}
+.btn:hover svg{transform:translateX(4px)}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:#c71f29}
+.btn-line{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-line:hover{background:#fff;color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--blue)}
+:focus-visible{outline:3px solid var(--red-hot);outline-offset:3px}
+.hazard{height:12px;background:repeating-linear-gradient(-45deg,var(--red) 0 16px,var(--navy) 16px 32px)}
+
+/* ---------- header ---------- */
+.topbar{background:var(--ink);color:var(--mist);font:500 12px/1 var(--mono);letter-spacing:.08em}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:11px;padding-bottom:11px;flex-wrap:wrap}
+.topbar a{text-decoration:none}
+.topbar a:hover{color:#fff;text-decoration:underline}
+.topbar b{color:var(--steel);font-weight:500;margin-right:6px}
+.topbar .nums{display:flex;gap:22px;flex-wrap:wrap}
+.topbar .em{color:#ffb4b8}
+header.main{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--mist)}
+header.main .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:84px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{height:62px;width:auto}
+.brand span{display:block;font:900 26px/.9 var(--display);text-transform:uppercase;color:var(--navy);letter-spacing:.01em}
+.brand small{display:block;font:500 11px/1 var(--mono);letter-spacing:.14em;color:var(--blue);margin-top:6px;text-transform:uppercase}
+nav.primary ul{display:flex;align-items:center;gap:30px}
+nav.primary a{font:600 13px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--navy);padding:8px 0;border-bottom:2px solid transparent}
+nav.primary a:hover{border-color:var(--red)}
+nav.primary a.cta{background:var(--red);color:#fff;padding:14px 20px;border-radius:2px;border:0}
+nav.primary a.cta:hover{background:#c71f29}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger i{display:block;height:3px;background:var(--navy);margin:6px 8px;transition:.2s}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--ink);color:#fff;min-height:min(86vh,800px);display:flex;align-items:flex-end;isolation:isolate;z-index:2}
+.hero::before{content:"";position:absolute;inset:0;background:url(images/hero-kitchen-fire.jpg) left center/cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(7,17,31,.93) 0,rgba(7,17,31,.78) 34%,rgba(7,17,31,.12) 62%,rgba(7,17,31,0)),linear-gradient(0deg,rgba(7,17,31,.75),transparent 40%)}
+.hero .wrap{width:100%;padding-top:90px;padding-bottom:84px;position:relative}
+.hero .eyebrow{display:flex;gap:12px;align-items:center;color:#ffd3d5;max-width:640px;line-height:1.5}
+.hero .eyebrow::before{content:"";flex:none;width:44px;height:3px;background:var(--red-hot)}
+.hero h1{font:900 clamp(60px,10.6vw,168px)/.84 var(--display);text-transform:uppercase;margin:26px 0 28px;letter-spacing:-.005em}
+.hero h1 em{font-style:normal;color:var(--red-hot);display:block}
+.hero p.lead{max-width:540px;font-size:19px;color:var(--mist);margin-bottom:12px}
+.hero .sub{font:600 21px/1.35 var(--body);margin-bottom:34px}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+.decal{position:absolute;right:var(--pad);bottom:-1px;transform:translateY(34%);width:210px;height:210px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 6px #fff,0 18px 40px rgba(0,0,0,.45);z-index:3}
+.decal svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 40s linear infinite}
+.decal text{font:500 11.5px var(--mono);letter-spacing:.2em;fill:#fff;text-transform:uppercase}
+.decal .core{position:absolute;inset:50px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.decal .core img{width:84px}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---------- services / blueprint ---------- */
+.services{position:relative;z-index:1;padding:150px 0 90px;background:var(--paper)}
+.services .head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.services .head .label{color:var(--red);margin-bottom:18px;display:block}
+.services .head p{font:500 20px/1.5 var(--body);color:#33465c;max-width:460px;justify-self:end}
+.bp{display:grid;grid-template-columns:minmax(300px,520px) 1fr;gap:clamp(28px,5vw,80px);align-items:center}
+.bp-panel{position:relative;background-color:var(--blueprint);background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:80px 80px,80px 80px,16px 16px,16px 16px;padding:18px;border:1px solid #0d5ea8}
+.bp-panel::before,.bp-panel::after{content:"";position:absolute;width:22px;height:22px;border:3px solid var(--red-hot)}
+.bp-panel::before{top:-3px;left:-3px;border-right:0;border-bottom:0}
+.bp-panel::after{bottom:-3px;right:-3px;border-left:0;border-top:0}
+.bp svg{width:100%;height:auto;display:block}
+.bp .part{fill:none;stroke:var(--mist);stroke-width:2.2;transition:stroke .2s}
+.bp .fillb{fill:var(--blueprint)}
+.bp g[data-n].on .part{stroke:var(--red-hot)}
+.bp g[data-n].on .mk circle{fill:#fff}
+.bp g[data-n].on .mk text.n{fill:var(--red)}
+.bp .mk circle{fill:var(--red-hot);transition:fill .2s}
+.bp .mk text.n{font:500 13px var(--mono);fill:#fff;text-anchor:middle}
+.bp .mk text.cap{font:500 10.5px var(--mono);letter-spacing:.14em;fill:var(--mist)}
+.bp .mk line{stroke:var(--mist);stroke-width:1;stroke-dasharray:3 3}
+.flow{fill:none;stroke:#fff;stroke-width:2.4;stroke-dasharray:2 11;stroke-linecap:round;animation:flow 1.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-26}}
+.blades{transform-box:fill-box;transform-origin:center;animation:spin 3s linear infinite}
+.bp ol{counter-reset:s;border-top:2px solid var(--ink)}
+.bp li{display:grid;grid-template-columns:70px 1fr;gap:6px 18px;padding:26px 0;border-bottom:1px solid #c3cfdb;cursor:default;transition:background .2s,padding .2s}
+.bp li:hover,.bp li.on{background:#fff;padding-left:14px}
+.bp li .no{font:900 54px/.9 var(--display);color:var(--red)}
+.bp li h3{font:900 clamp(30px,3.4vw,44px)/.95 var(--display);text-transform:uppercase;color:var(--navy)}
+.bp li p{grid-column:2;color:#3b4e63;margin-top:2px}
+.doors{margin-top:90px;border-top:2px solid var(--ink)}
+.door{display:grid;grid-template-columns:1.1fr 1.2fr auto;gap:30px;align-items:center;padding:34px 0;border-bottom:1px solid #c3cfdb;text-decoration:none;transition:background .25s,padding .25s}
+.door:hover{background:var(--navy);color:#fff;padding-left:26px;padding-right:26px}
+.door h3{font:900 clamp(32px,4.4vw,64px)/.92 var(--display);text-transform:uppercase}
+.door p{color:#3b4e63;max-width:480px}
+.door:hover p{color:var(--mist)}
+.door .go{display:inline-flex;align-items:center;gap:12px;font:600 14px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+.door:hover .go{color:#fff}
+.door .go svg{width:42px;height:42px;padding:11px;border-radius:50%;background:var(--red);color:#fff}
+
+/* ---------- about ---------- */
+.about{position:relative;background:var(--ink);color:#fff;padding:120px 0 130px;overflow:hidden}
+.about::before{content:"";position:absolute;inset:0;background:url(images/exhaust-filters.jpg) center/cover;opacity:.32}
+.about .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,100px);align-items:start}
+.year{font:900 clamp(150px,26vw,400px)/.78 var(--display);background:url(images/exhaust-filters-bright.jpg) center/cover;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;letter-spacing:-.01em;margin-bottom:26px;filter:drop-shadow(0 0 1px rgba(255,255,255,.35))}
+.about .label{color:var(--red-hot);display:block;margin-bottom:16px}
+.about h2{font:900 clamp(34px,4.4vw,64px)/.92 var(--display);text-transform:uppercase;margin-bottom:24px}
+.about .intro{font-size:19px;color:var(--mist);max-width:520px}
+.report{position:relative;background:#f7f4ec;color:var(--ink);padding:36px 34px 52px;transform:rotate(1.2deg);box-shadow:0 30px 60px rgba(0,0,0,.5);margin-top:20px;}
+.js .report.rv.in{transform:rotate(1.2deg)}
+.report::after{content:"";position:absolute;left:0;right:0;bottom:0;height:14px;background:radial-gradient(circle at 7px 14px,var(--ink) 6px,transparent 7px) 0 0/14px 14px repeat-x}
+.report .rh{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:6px}
+.report .rh .label{margin:0;color:var(--ink)}
+.report .rh img{height:46px;width:auto}
+.report li{display:grid;grid-template-columns:34px 1fr;gap:16px;padding:18px 0;border-bottom:1px dashed #b9b4a4}
+.report li:last-child{border-bottom:0}
+.report .box{width:26px;height:26px;border:2px solid var(--ink);display:grid;place-items:center;margin-top:3px}
+.report .box svg{width:18px;height:18px;color:var(--red);stroke-dasharray:24;stroke-dashoffset:24;transition:stroke-dashoffset .6s}
+.report.in .box svg{stroke-dashoffset:0}
+.report li:nth-child(3) .box svg{transition-delay:.15s}.report li:nth-child(4) .box svg{transition-delay:.3s}.report li:nth-child(5) .box svg{transition-delay:.45s}
+.report li span.t{font:500 12px var(--mono);letter-spacing:.14em;color:var(--blue);display:block;margin-bottom:3px}
+
+/* ---------- expect ---------- */
+.expect{padding:120px 0 80px;background:var(--paper)}
+.expect .top{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:50px}
+.expect .top .h2{max-width:900px;color:var(--navy)}
+.expect .top .h2 span{color:var(--blue)}
+.spec{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink);border-left:1px solid #c3cfdb}
+.spec li{padding:30px 28px 34px;border-right:1px solid #c3cfdb;border-bottom:1px solid #c3cfdb;font:500 20px/1.4 var(--body);color:var(--navy);display:flex;flex-direction:column;gap:22px;justify-content:space-between;min-height:190px;transition:background .25s,color .25s}
+.spec li:hover{background:var(--blue);color:#fff}
+.spec svg{width:34px;height:34px;color:var(--red);padding:6px;border:2px solid currentColor;border-radius:50%}
+.spec li:hover svg{color:#fff}
+.affil{margin-top:80px;display:grid;grid-template-columns:230px minmax(0,1fr);gap:40px;align-items:center}
+.affil .label{color:#4d6178;line-height:1.6}
+.logos{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;min-width:0}
+.logos a,.logos span{background:#fff;border:1px solid #d3dce6;aspect-ratio:2/1;display:grid;place-items:center;padding:12px;transition:border-color .2s,transform .2s}
+.logos a:hover{border-color:var(--blue);transform:translateY(-3px)}
+.logos img{max-height:100%;max-width:100%;width:auto;object-fit:contain}
+
+/* ---------- technicians ---------- */
+.techs{background:var(--blue);color:#fff;padding:110px 0 120px;position:relative;overflow:hidden}
+.techs::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.05) 0 2px,transparent 2px 22px)}
+.techs .wrap{position:relative;display:grid;grid-template-columns:minmax(260px,420px) 1fr;gap:clamp(30px,6vw,100px)}
+.techs .label{color:#cfe6ff;display:block;margin-bottom:16px}
+.techs h2{font:900 clamp(44px,5.4vw,82px)/.9 var(--display);text-transform:uppercase;margin-bottom:22px}
+.techs .side p{font-size:19px;color:#e3f0fc;margin-bottom:34px}
+.techs .badges{display:flex;gap:18px;align-items:center;background:#fff;padding:18px 22px;width:max-content;border-radius:2px}
+.techs .badges img{height:74px;width:auto}
+.skills li{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:14px 0 12px;border-top:1px solid rgba(255,255,255,.4);font:900 clamp(28px,3.7vw,54px)/.98 var(--display);text-transform:uppercase;transition:padding .25s,color .25s}
+.skills li:last-child{border-bottom:1px solid rgba(255,255,255,.4)}
+.skills li:hover{padding-left:20px;color:var(--ink)}
+.skills li i{font:500 12px var(--mono);font-style:normal;letter-spacing:.16em;color:#cfe6ff;flex:none}
+
+/* ---------- offer ---------- */
+.offer{background:var(--navy);padding:90px 0}
+.coupon{position:relative;background:var(--red);color:#fff;display:grid;grid-template-columns:1.5fr 1fr;gap:20px;align-items:center;padding:56px clamp(28px,5vw,72px);border:3px dashed rgba(255,255,255,.7);outline:10px solid var(--red);outline-offset:-1px;border-radius:4px}
+.coupon::before,.coupon::after{content:"";position:absolute;top:50%;width:46px;height:46px;border-radius:50%;background:var(--navy);transform:translateY(-50%)}
+.coupon::before{left:-24px}.coupon::after{right:-24px}
+.coupon .label{display:block;color:#ffe0e2;margin-bottom:18px}
+.coupon h2{font:900 clamp(42px,6.2vw,96px)/.88 var(--display);text-transform:uppercase}
+.coupon .acts{display:flex;flex-direction:column;gap:14px;align-items:stretch}
+.coupon .btn{justify-content:space-between;background:#fff;color:var(--ink)}
+.coupon .btn:hover{background:var(--ink);color:#fff}
+.coupon .btn small{display:block;font:500 11px var(--mono);letter-spacing:.14em;color:var(--steel);margin-bottom:6px}
+.coupon .btn b{font:900 28px/1 var(--display);letter-spacing:.02em}
+.coupon .btn.em b{font:600 15px/1.1 var(--body);letter-spacing:0;text-transform:none}
+
+/* ---------- areas ---------- */
+.areas{background:var(--ink);color:#fff;padding:120px 0 110px}
+.areas .label{color:var(--red-hot);display:block;margin-bottom:20px}
+.areas .lead{font:900 clamp(34px,5.4vw,84px)/.92 var(--display);text-transform:uppercase;color:#5f7590;max-width:1200px}
+.areas .lead b{color:#fff;font-weight:900}
+.wall{margin-top:60px;display:flex;flex-wrap:wrap;gap:6px 0;border-top:1px solid #243752;padding-top:34px}
+.wall li{font:700 clamp(22px,2.5vw,34px)/1.25 var(--display);text-transform:uppercase;color:var(--steel);letter-spacing:.02em;transition:color .15s}
+.wall li::after{content:"/";color:var(--red-hot);margin:0 .5em;font-weight:900}
+.wall li:last-child::after{content:""}
+.wall li:hover{color:#fff}
+.areas .close{margin-top:56px;display:flex;gap:18px;align-items:center;max-width:760px;font:600 clamp(20px,2vw,26px)/1.35 var(--body);color:var(--mist)}
+.areas .close::before{content:"";flex:none;width:56px;height:4px;background:var(--red-hot)}
+
+/* ---------- contact ---------- */
+.contact{background:var(--paper);padding:120px 0 110px}
+.contact .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(30px,6vw,100px)}
+.contact .label{color:var(--red);display:block;margin-bottom:18px}
+.contact h2{color:var(--navy);margin-bottom:40px}
+.phones a,.phones div{display:flex;align-items:baseline;gap:20px;border-top:1px solid #c3cfdb;padding:16px 0;text-decoration:none;color:var(--navy)}
+.phones .k{font:500 12px var(--mono);letter-spacing:.14em;width:30px;color:var(--blue)}
+.phones .v{font:900 clamp(36px,5vw,72px)/.95 var(--display);letter-spacing:.01em;white-space:nowrap;transition:color .2s}
+.phones a:hover .v{color:var(--red)}
+.phones .fax .v{font-size:clamp(28px,3vw,42px);color:#5a6d82}
+.phones{border-bottom:1px solid #c3cfdb}
+.info dl{display:grid;grid-template-columns:110px 1fr;gap:0}
+.info dt,.info dd{padding:20px 0;border-top:1px solid #c3cfdb}
+.info dt{font:500 12px/1.9 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.info dd{font-size:19px;color:var(--navy)}
+.info dd a{text-decoration:none;border-bottom:2px solid var(--red)}
+.info dd a:hover{color:var(--red)}
+.hours{margin-top:30px;background:var(--navy);color:#fff;padding:30px 30px 28px;position:relative}
+.hours::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:repeating-linear-gradient(-45deg,var(--red) 0 8px,var(--navy) 8px 16px)}
+.hours .label{color:#9bb3cc;margin-bottom:12px}
+.hours .row{display:flex;justify-content:space-between;gap:20px;font:900 clamp(26px,3vw,38px)/1.1 var(--display);text-transform:uppercase;padding-bottom:16px;border-bottom:1px solid #2b4263;margin-bottom:16px}
+.hours p{color:var(--mist);font-size:16px}
+.hours p+p{margin-top:6px}
+.hours .tag{display:inline-block;background:var(--red);color:#fff;font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:6px 10px;margin-bottom:10px}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:var(--mist);padding:70px 0 0}
+footer .cols{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;padding-bottom:56px}
+footer .brand span{color:#fff}
+footer .brand small{color:var(--steel)}
+footer .brand img{height:76px}
+footer h4{font:500 12px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--steel);margin-bottom:18px}
+footer li{margin-bottom:10px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+footer address{font-style:normal;line-height:1.7}
+footer .bar{border-top:1px solid #1d3050;padding:22px 0;font-size:14px}
+footer .bar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer .bar a{color:#fff;font-weight:600;border-bottom:2px solid var(--red)}
+footer .bar a:hover{text-decoration:none;color:var(--red-hot)}
+
+/* ---------- reveal ---------- */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.js .rv.in{opacity:1;transform:none}
+.hero .wrap>*{animation:rise .8s both}
+.hero .wrap>*:nth-child(2){animation-delay:.1s}.hero .wrap>*:nth-child(3){animation-delay:.2s}.hero .wrap>*:nth-child(4){animation-delay:.3s}.hero .wrap>*:nth-child(5){animation-delay:.4s}
+@keyframes rise{from{opacity:0;transform:translateY(30px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}.report .box svg{stroke-dashoffset:0}}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .burger{display:block}
+  nav.primary{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--mist);display:none}
+  nav.primary.open{display:block}
+  nav.primary ul{flex-direction:column;align-items:stretch;gap:0;padding:10px var(--pad) 24px}
+  nav.primary a{display:block;padding:16px 0;border-bottom:1px solid var(--mist)}
+  nav.primary a.cta{margin-top:14px;text-align:center}
+  .spec{grid-template-columns:repeat(2,1fr)}
+  .logos{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .affil{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  .topbar .em{display:none}
+  .services{padding-top:130px}
+  .services .head,.bp,.about .wrap,.techs .wrap,.contact .wrap{grid-template-columns:1fr}
+  .services .head p{justify-self:start}
+  .door{grid-template-columns:1fr;gap:14px}
+  .coupon{grid-template-columns:1fr}
+  .coupon::before,.coupon::after{display:none}
+  footer .cols{grid-template-columns:1fr}
+  .decal{width:150px;height:150px;transform:translateY(40%)}
+  .decal .core{inset:36px}.decal .core img{width:58px}
+  .decal text{font-size:12px}
+  .hero .wrap{padding-bottom:70px}
+  .report{transform:none}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  header.main .wrap{height:74px}
+  .brand img{height:50px}.brand span{font-size:20px}.brand small{display:none}
+  .spec{grid-template-columns:1fr}
+  .spec li{min-height:0}
+  .logos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .info dl{grid-template-columns:1fr}.info dt{border-bottom:0;padding-bottom:0}.info dd{border-top:0;padding-top:4px}
+  .hours .row{flex-direction:column;gap:4px}
+  .skills li i{display:none}
+  .coupon h2{font-size:clamp(34px,9.4vw,60px)}
+  .coupon{padding:44px 24px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="nums">
+      <span><b>TF</b><a href="tel:+18004698715">1-800-469-8715</a></span>
+      <span><b>P</b><a href="tel:+14032303777">403-230-3777</a></span>
+      <span><b>F</b>403-230-3781</span>
+    </div>
+    <span class="em">Emergency appointments available</span>
+  </div>
+</div>
+
+<header class="main">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Professional Power Wash, home">
+      <img src="images/pgs-logo.png" alt="PGS Professional Group Services Ltd. logo">
+      <div><span>Professional Power Wash</span><small>Kitchen exhaust cleaning · Since 1979</small></div>
+    </a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+    <nav class="primary" id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="https://www.professionalpowerwash.ca/services">Services</a></li>
+        <li><a href="https://www.professionalpowerwash.ca/gallery">Gallery</a></li>
+        <li><a href="https://www.professionalpowerwash.ca/testimonials">Testimonials</a></li>
+        <li><a href="https://www.professionalpowerwash.ca/nfpa96faq">NFPA 96 FAQ</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a class="cta" href="#offer">Get a Quote</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <p class="eyebrow label">A trusted name in kitchen exhaust cleaning services &amp; kitchen fire prevention, throughout Alberta, since 1979</p>
+    <h1 id="h1">Keep your cooking facility <em>safe.</em></h1>
+    <p class="lead">Experience Alberta's trusted commercial kitchen exhaust &amp; ventilation system cleaners.</p>
+    <p class="sub">Avoid fire hazards with our cleaning services.</p>
+    <div class="actions">
+      <a class="btn btn-red" href="#contact">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-line" href="#services">See our services</a>
+    </div>
+  </div>
+  <div class="decal" aria-hidden="true">
+    <svg viewBox="0 0 210 210"><defs><path id="ring" d="M105 105m-84 0a84 84 0 1 1 168 0a84 84 0 1 1-168 0"/></defs>
+      <text><textPath href="#ring">Family owned &amp; operated · Since 1979 · PAC certified ·</textPath></text></svg>
+    <div class="core"><img src="images/pac-certified.png" alt=""></div>
+  </div>
+</section>
+<div class="hazard"></div>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="label">Services</span><h2 class="h2" style="color:var(--navy)">What do our services include?</h2></div>
+      <p>The cleaning of:</p>
+    </div>
+    <div class="bp rv">
+      <div class="bp-panel">
+        <svg viewBox="0 0 480 560" role="img" aria-label="Diagram of a commercial kitchen exhaust system showing the canopy, filters, fan and ductwork">
+          <defs><pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="9" stroke="#dbe5ef" stroke-width="1.3"/></pattern></defs>
+          <rect x="30" y="98" width="420" height="12" fill="url(#hatch)"/>
+          <line x1="30" y1="98" x2="450" y2="98" stroke="#dbe5ef" stroke-width="3"/>
+          <line x1="40" y1="522" x2="450" y2="522" stroke="#dbe5ef" stroke-width="3"/>
+
+          <g data-n="4"><path class="part" d="M210 340V200H380V84" stroke-width="30" style="stroke:var(--mist)"/><path d="M210 340V200H380V84" fill="none" stroke="var(--blueprint)" stroke-width="25"/><path class="flow" d="M210 330V200H380V90"/></g>
+          <g data-n="3"><rect class="part fillb" x="354" y="84" width="52" height="14"/><circle class="part fillb" cx="380" cy="54" r="29"/>
+            <g class="blades"><path class="part" d="M380 54c-4-14 4-22 12-22 2 12-4 20-12 22zM380 54c14-4 22 4 22 12-12 2-20-4-22-12zM380 54c4 14-4 22-12 22-2-12 4-20 12-22zM380 54c-14 4-22-4-22-12 12-2 20 4 22 12z" style="stroke-width:1.6"/></g>
+            <circle cx="380" cy="54" r="4" fill="var(--mist)"/></g>
+          <g data-n="1"><polygon class="part fillb" points="100,432 320,432 252,340 168,340"/><rect class="part fillb" x="94" y="432" width="232" height="9"/></g>
+          <g data-n="2"><rect class="part fillb" x="146" y="386" width="128" height="40"/>
+            <path class="part" d="M162 386v40M178 386v40M194 386v40M210 386v40M226 386v40M242 386v40M258 386v40" style="stroke-width:1.4"/>
+            <path class="part" d="M146 396l128 0M146 416l128 0" style="stroke-width:1;stroke-dasharray:4 4"/></g>
+          <g class="rng"><rect x="120" y="474" width="180" height="48" fill="none" stroke="#9fc0de" stroke-width="2"/>
+            <ellipse cx="160" cy="474" rx="22" ry="5" fill="none" stroke="#9fc0de" stroke-width="2"/><ellipse cx="210" cy="474" rx="22" ry="5" fill="none" stroke="#9fc0de" stroke-width="2"/><ellipse cx="260" cy="474" rx="22" ry="5" fill="none" stroke="#9fc0de" stroke-width="2"/>
+            <path d="M210 468c-10-12-4-22 0-30 4 8 10 18 0 30zM160 468c-7-9-3-16 0-22 3 6 7 13 0 22zM260 468c-7-9-3-16 0-22 3 6 7 13 0 22z" fill="var(--red-hot)"/></g>
+
+          <g class="mk" data-n="1"><line x1="358" y1="372" x2="281" y2="372"/><circle cx="372" cy="372" r="14"/><text class="n" x="372" y="377">1</text><text class="cap" x="394" y="376">CANOPY</text></g>
+          <g class="mk" data-n="2"><line x1="64" y1="406" x2="146" y2="406"/><circle cx="50" cy="406" r="14"/><text class="n" x="50" y="411">2</text><text class="cap" x="20" y="440">FILTERS</text></g>
+          <g class="mk" data-n="3"><line x1="428" y1="48" x2="409" y2="52"/><circle cx="442" cy="46" r="14"/><text class="n" x="442" y="51">3</text><text class="cap" x="425" y="76">FAN</text></g>
+          <g class="mk" data-n="4"><line x1="300" y1="168" x2="300" y2="184"/><circle cx="300" cy="154" r="14"/><text class="n" x="300" y="159">4</text><text class="cap" x="262" y="130">DUCTWORK</text></g>
+        </svg>
+      </div>
+      <ol id="parts">
+        <li data-n="1"><span class="no">01</span><h3>Canopy(s)</h3><p>Inside, outside, front and sides.</p></li>
+        <li data-n="2"><span class="no">02</span><h3>Filters</h3><p>If applicable, removed and washed.</p></li>
+        <li data-n="3"><span class="no">03</span><h3>Fan</h3><p>Blades and housing.</p></li>
+        <li data-n="4"><span class="no">04</span><h3>Ductwork</h3><p>All accessible duct work.</p></li>
+      </ol>
+    </div>
+
+    <div class="doors rv">
+      <a class="door" href="https://www.professionalpowerwash.ca/services">
+        <h3>Learn more about our services</h3>
+        <p>See what it will take to have your kitchen maintained so that it is up to fire code requirements.</p>
+        <span class="go">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="door" href="https://www.professionalpowerwash.ca/gallery">
+        <h3>View our past cleaning work</h3>
+        <p>Discover the protection our cleaning offers to any commercial kitchen.</p>
+        <span class="go">See our work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="rv">
+      <div class="year" aria-label="Since 1979">1979</div>
+      <span class="label">Family owned &amp; operated</span>
+      <h2>We look after your needs, every step of the way</h2>
+      <p class="intro">We, at Professional Power Wash, are a family-owned and operated business. We have been operational since 1979 and pride ourselves in supporting the health and safety of our local businesses and facilities.</p>
+    </div>
+    <div class="report rv" id="report">
+      <div class="rh"><span class="label">Our administrative staff and technicians</span><img src="images/pac-certified.png" alt="PAC certified"></div>
+      <ul>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4"><path d="M3 13l6 6L21 5"/></svg></span><div><span class="t">01</span>We assess the needs of your establishment and its systems, to provide you with an accurate estimate for your services.</div></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4"><path d="M3 13l6 6L21 5"/></svg></span><div><span class="t">02</span>Our fully-certified technicians take before and after photos to help you better assess the progression of your system as it's being used and cleaned.</div></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4"><path d="M3 13l6 6L21 5"/></svg></span><div><span class="t">03</span>We provide you with your follow-up report &amp; certificate decal.</div></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4"><path d="M3 13l6 6L21 5"/></svg></span><div><span class="t">04</span>Our administrative staff notify you when you're coming due for your next cleaning and book you accordingly.</div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="expect" id="expect">
+  <div class="wrap">
+    <div class="top rv">
+      <h2 class="h2">What can you expect from <span>Professional Power Wash?</span></h2>
+    </div>
+    <ul class="spec rv">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 13l5 5L20 6"/></svg>Phil Ackland (PAC) Certified Technicians</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 13l5 5L20 6"/></svg>An insured and reliable business, performing your services</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 13l5 5L20 6"/></svg>Quality and professional service</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 13l5 5L20 6"/></svg>Larger crew of technicians to service larger, farther &amp; multiple facilities at one time</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 13l5 5L20 6"/></svg>Reminders of when your systems are coming due for their next service, to keep your company in compliance</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 13l5 5L20 6"/></svg>The option to create a yearly schedule, for your maintenance needs</li>
+    </ul>
+
+    <div class="affil rv">
+      <span class="label">Professional<br>affiliations</span>
+      <div class="logos">
+        <a href="http://www.albertafire.com/" target="_blank" rel="noopener"><img src="images/afsa.jpg" alt="Alberta Fire Safety Association"></a>
+        <a href="https://www.complyworks.com/" target="_blank" rel="noopener"><img src="images/complyworks.jpg" alt="ComplyWorks"></a>
+        <a href="https://www.isnetworld.com/" target="_blank" rel="noopener"><img src="images/isnetworld.jpg" alt="ISNetworld"></a>
+        <a href="https://contractorcheck.ca/" target="_blank" rel="noopener"><img src="images/contractorcheck.jpg" alt="ContractorCheck"></a>
+        <a href="https://www.nationalcompliance.com/index.asp" target="_blank" rel="noopener"><img src="images/ncms.jpg" alt="National Compliance Management Service"></a>
+        <span><img src="images/pac-certified.png" alt="PAC certified" style="height:78%"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="techs" id="technicians">
+  <div class="wrap">
+    <div class="side rv">
+      <span class="label">Our technicians</span>
+      <h2>What can you expect of our technicians?</h2>
+      <p>Fully trained in safety procedures such as:</p>
+      <div class="badges"><img src="images/pac-certified.png" alt="PAC certified"><img src="images/pa-qualified.png" alt="PA qualified company"></div>
+    </div>
+    <ul class="skills rv">
+      <li>Fall Protection <i>01</i></li>
+      <li>Workplace Hazardous Materials Information System <i>02</i></li>
+      <li>Standard First Aid &amp; Level C CPR <i>03</i></li>
+      <li>Respiratory Awareness Training <i>04</i></li>
+      <li>Self-Propelled Elevated Work Platform Training <i>05</i></li>
+    </ul>
+  </div>
+</section>
+
+<section class="offer" id="offer">
+  <div class="wrap">
+    <div class="coupon rv">
+      <div>
+        <span class="label">Promotions and special offers</span>
+        <h2>Receive free estimates / quotes by email or phone</h2>
+      </div>
+      <div class="acts">
+        <a class="btn" href="tel:+14032303777"><span><small>Call</small><b>403-230-3777</b></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+        <a class="btn em" href="mailto:professionalpowerwash@shaw.ca"><span><small>Email</small><b>professionalpowerwash@shaw.ca</b></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="areas" id="areas">
+  <div class="wrap">
+    <span class="label">Our service areas</span>
+    <p class="lead rv">We serve communities from <b>Rocky Mountain House</b> to <b>Taber</b>, from <b>Crowsnest Pass</b> to <b>Viking</b>, and to almost all areas in between as well as the following:</p>
+    <ul class="wall rv">
+      <li>Acme</li><li>Airdrie</li><li>Banff</li><li>Bassano</li><li>Blairmore</li><li>Bowden</li><li>Bragg Creek</li><li>Brooks</li><li>Calgary</li><li>Camrose</li><li>Canmore</li><li>Cardston</li><li>Carstairs</li><li>Chestermere</li><li>Claresholm</li><li>Cochrane</li><li>Crossfield</li><li>Devon</li><li>Dewinton</li><li>Drayton Valley</li><li>Drumheller</li><li>Eckville</li><li>Forestburg</li><li>Fort Macleod</li><li>Granum</li><li>Gull Lake</li><li>Hanna</li><li>Hardisty</li><li>High River</li><li>Hughenden</li><li>Innisfail</li><li>Jasper</li><li>Lacombe</li><li>Langdon</li><li>Leduc</li><li>Lethbridge</li><li>Magrath</li><li>Medicine Hat</li><li>Millet</li><li>Morinville</li><li>Nanton</li><li>Nordegg</li><li>Okotoks</li><li>Olds</li><li>Pigeon Lake</li><li>Pincher Creek</li><li>Pine Lake</li><li>Ponoka</li><li>Raymond</li><li>Red Deer</li><li>Redwater</li><li>Rimbey</li><li>Rosebud</li><li>Stettler</li><li>Strathmore</li><li>Sundre</li><li>Sylvan Lake</li><li>Three Hills</li><li>Tofield</li><li>Turner Valley</li><li>Vauxhall</li><li>Vulcan</li><li>Waterton</li><li>Wetaskiwin</li>
+    </ul>
+    <p class="close rv">These are the lengths we will go to in order to make sure you get looked after properly!</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rv">
+      <span class="label">Contact details</span>
+      <h2 class="h2">Professional Power Wash</h2>
+      <div class="phones">
+        <a href="tel:+14032303777"><span class="k">P</span><span class="v">403-230-3777</span></a>
+        <a href="tel:+18004698715"><span class="k">TF</span><span class="v">1-800-469-8715</span></a>
+        <div class="fax"><span class="k">F</span><span class="v">403-230-3781</span></div>
+      </div>
+    </div>
+    <div class="info rv">
+      <dl>
+        <dt>Address</dt><dd>C2-624 Beaver Dam Rd. NE<br>Calgary, AB T2K 4W6</dd>
+        <dt>Email</dt><dd><a href="mailto:professionalpowerwash@shaw.ca">professionalpowerwash@shaw.ca</a></dd>
+      </dl>
+      <div class="hours">
+        <div class="label">Office hours</div>
+        <div class="row"><span>Monday to Friday</span><span>08:30 AM - 03:00 PM</span></div>
+        <span class="tag">Emergency appointments available</span>
+        <p>Our work crews are flexible for your after hours business needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="#top"><img src="images/pgs-logo.png" alt="PGS Professional Group Services Ltd. logo"><div><span>Professional Power Wash</span><small>Kitchen exhaust cleaning · Since 1979</small></div></a>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="https://www.professionalpowerwash.ca/services">Services</a></li>
+          <li><a href="https://www.professionalpowerwash.ca/gallery">Gallery</a></li>
+          <li><a href="https://www.professionalpowerwash.ca/testimonials">Testimonials</a></li>
+          <li><a href="https://www.professionalpowerwash.ca/nfpa96faq">NFPA 96 FAQ</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <address>C2-624 Beaver Dam Rd. NE<br>Calgary, AB T2K 4W6<br>
+          <a href="tel:+14032303777">403-230-3777</a> · <a href="tel:+18004698715">1-800-469-8715</a><br>
+          <a href="mailto:professionalpowerwash@shaw.ca">professionalpowerwash@shaw.ca</a></address>
+      </div>
+    </div>
+  </div>
+  <div class="bar"><div class="wrap">
+    <span>© 2026 Professional Power Wash</span>
+    <span><a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Design by Cleaning Digital.</a></span>
+  </div></div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var b=document.querySelector('.burger'),n=document.getElementById('nav');
+  b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+  var items=document.querySelectorAll('#parts li'),gs=document.querySelectorAll('.bp svg g[data-n]');
+  function set(k,on){gs.forEach(function(g){if(g.dataset.n===k)g.classList.toggle('on',on)});items.forEach(function(l){if(l.dataset.n===k)l.classList.toggle('on',on)})}
+  items.forEach(function(l){l.addEventListener('mouseenter',function(){set(l.dataset.n,true)});l.addEventListener('mouseleave',function(){set(l.dataset.n,false)})});
+  var cur=0;setInterval(function(){if(matchMedia('(hover:hover)').matches&&document.querySelector('#parts li:hover'))return;set(String(cur||4),false);cur=cur%4+1;set(String(cur),true)},2200);
+  var els=document.querySelectorAll('.rv,#report');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
